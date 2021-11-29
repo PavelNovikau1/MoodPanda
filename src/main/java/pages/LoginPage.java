@@ -5,8 +5,12 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class LoginPage extends MainPage {
 
+    private static final String EMAIL_INPUT_CSS = "#ContentPlaceHolderContent_TextBoxEmail";
+    private static final String PASSWORD_INPUT_CSS = "#ContentPlaceHolderContent_TextBoxPassword";
+    private static final String LOGIN_BUTTON_CSS = "#ContentPlaceHolderContent_ButtonLogin";
+
     public LoginPage openPage() {
-        open(LOGIN_URL);
+        open(BASE_URL + "/Login");
         return this;
     }
 

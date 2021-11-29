@@ -7,7 +7,7 @@ public class MoodPandaTest extends BaseTest {
     public void moodTest() {
         loginPage.openPage()
                 .login("pablo777@mailinator.com", "TestPass123")
-                .waitForMoodButtonVisible()
+                 .waitForMoodButtonVisible()
                 .clickUpdateMoodButton()
                 .updateMood(3)
                 .clickUpdateMoodButtonOnModalPage()

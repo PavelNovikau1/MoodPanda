@@ -1,11 +1,13 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import java.time.Duration;
 
+import java.time.Duration;
 import static com.codeborne.selenide.Selenide.$;
 
 public class FeedPage extends HeaderPage {
+
+    private static final String UPDATE_MOOD_BUTTON_CSS = "#LinkUpdate";
 
     public FeedPage waitForMoodButtonVisible() {
         $(UPDATE_MOOD_BUTTON_CSS).shouldBe(Condition.visible, Duration.ofSeconds(10));
@@ -16,5 +18,4 @@ public class FeedPage extends HeaderPage {
         $(UPDATE_MOOD_BUTTON_CSS).click();
         return new RateYourHappinessModalPage();
     }
-
 }
