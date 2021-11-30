@@ -5,6 +5,7 @@ import pages.*;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
+
 public class BaseTest {
     LoginPage loginPage;
     FeedPage feedPage;
