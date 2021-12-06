@@ -15,7 +15,7 @@ public class RateYourHappinessModalPage extends HeaderPage {
     private static final String TEXT_AREA_CSS = "#TextBoxUpdateMoodTag";
 
     public RateYourHappinessModalPage updateMood(int moodValue) {
-        log.info(String.format("Set mod value : '%s' into text area", moodValue));
+        log.info(String.format("Set mood value : '%s' into text area", moodValue));
         $(SLIDER_CSS).click();
         val defaultMoodValue = 5;
         Keys direction = null;
